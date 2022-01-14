@@ -1,0 +1,10 @@
+body {
+    background-color: yellow;
+    font-family: sans-serif;
+}
+
+.parrafo-destacado {
+    color: blue;
+    font-size: 17px;
+    line-height: 25px;
+}
