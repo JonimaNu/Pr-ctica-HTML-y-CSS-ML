@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/cssRegister.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/" method="GET">
+        <nav>
+            <div class="nombre">
+                <label for="name"></label>
+                <input placeholder="Nombre y apellido" type="text" name="nombre" id="nombre" pattern="[A-Za-z ]{1,32}">
+                <label for="user"></label>
+                <input placeholder="Nombre de Usuari@" type="text" name="user" id="user" required "[[A-Za-z ]{1,6}">
+                <label></label>
+                <input placeholder="Email:" type="text" name="email" id="email" required>
+            </div>
+            <br/>
+
+            <div class="fechaNacimiento">
+                <h2>Fecha de Nacimiento</h2>
+                <label for="fechaNacimiento"></label>
+                <input placeholder="Fecha de Nacimiento" type="date" name="fechaNacimiento" id="fechaNacimiento" min="1810-01-01" max="2005-01-01" required>
+                <br/>
+                <label for="domicilio"></label>
+                <input placeholder="Domicilio" type="text" name="domicilio" id="domicilio" required>
+            </div>
+            <br/>
+
+            <div class="perfil">
+                <h2>Perfil de usuario</h2>
+                <p><label for="comprar">Comprador</label>
+                    <input type="radio" id="comprar" name="comprar" value="comprar">
+                    <label for="vender">Vendedor</label>
+                    <input type="radio" id="vender" name="vender" value="vender"></p>
+
+            </div>
+            <br/>
+            <div class="intereses">
+                <h2>Intereses</h2>
+                |
+                <p><input type="checkbox" id="electro" name="electro" value="electro"><label for="electro">Electro</label></p>
+                <p><input type="checkbox" id="moda" name="moda" value="moda"><label for="moda">Moda</label></p>
+                <p><input type="checkbox" id="hogar" name="hogar" value="hogar"><label for="hogar">Hogar</label></p>
+                <p><input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria"><label for="jugueteria">Jugeteria</label></p>
+                <p><input type="checkbox" id="vidasana" name="vidasana" value="vidasana"><label for="vidasana">Vida Sana</label></p>
+            </div>
+
+            <br/>
+            <div>
+                <label for="profile">Foto de usuario</label>
+                <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
+            </div>
+            <br/>
+            <div class="clave">
+                <label for="password">Elegí tu contraseña:</label>
+                <p><input placeholder="" type="password" name="password" id="password" required></p>
+                <br/>
+                <label for="password">Repetí tu contraseña:</label>
+                <p><input placeholder="" type="password" name="password_confirm" id="password_confirm" required></p>
+            </div>
+            <br/>
+            <div class="submit">
+                <input type="submit" name="submit" id="enviar" value="ENVIAR"> </input>
+                <input type="reset" name="reset" id="borrar" value="BORRAR"> </input>
+            </div>
+        </nav>
+    </form>
+</body>
+
+</html>
