@@ -35,7 +35,7 @@ h1 {
 }
 
 .discount {
-    width: 70%;
+    width: 80%;
     color: #39b54a;
     font-size: 16px;
     font-weight: normal;
@@ -124,14 +124,15 @@ section.banner img {
     width: 90vw;
     text-align: center;
     margin: 0 auto;
-    background-color: #ebebeb;
+    border-top: 1px solid #ebebeb;
 }
 
-.products,
-.offers {
+.articulos,
+.ofertas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 h3 {
@@ -141,10 +142,9 @@ h3 {
 }
 
 .precio_descuento {
-    width: 100%;
+    width: 110%;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
@@ -157,7 +157,6 @@ h3 {
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
-    background-color: #FFF;
     border-radius: 50%;
     position: absolute;
     right: 20px;
@@ -168,7 +167,7 @@ h3 {
 .main-article {
     width: 100%;
     margin: 10px 0px;
-    background-color: #fff;
+    background-color: #ebebeb;
 }
 
 .main-article img {
@@ -201,15 +200,13 @@ h3 {
 }
 
 footer {
-    background-color: #EAC926;
+    background-color: white;
     text-align: center;
 }
 
 footer i {
     font-size: 2em;
     margin-bottom: 10px;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 footer h3 {
@@ -227,6 +224,11 @@ footer p {
     text-align: left;
     margin: 10% 40%
 }
+
+
+/*Navegación en tablets (ancho mínimo 361 px)
+  Navegación en desktop (ancho mínimo 769 px)
+ */
 
 @media (min-width:361px) {
     .nombre_producto {
@@ -286,8 +288,8 @@ footer p {
     .main-article {
         width: 18%;
     }
-    .products,
-    .offers {
+    .articulos,
+    .ofertas {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
