@@ -1,3 +1,19 @@
+/*● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+
+/*● Tamaños de Tipografía
+Cuerpos de texto: 12px
+Títulos (Basado en tu última visita/Ofertas): 24px
+Precios: 18px  
+Descuentos: 16px
+Descripciones: 16px*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,71 +21,42 @@
 }
 
 body {
-    background-color: yellow;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
-.parrafo-destacado {
-    color: blue;
-    font-size: 17px;
-    line-height: 25px;
+h1 {
+    font-size: 24px
 }
 
-h3 {
-    font-size: 24px;
+.precios {
+    font-size: 18px;
+    width: 30%;
 }
 
-p {
-    font-size: 12px;
+.discount {
+    width: 70%;
+    color: #39b54a;
+    font-size: 16px;
+    font-weight: normal;
 }
 
-div.top-header {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
+section {
+    font-size: 16px
 }
 
-header div.top-header p {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-header {
-    background-color: #EAC926;
-}
-
-header div.logo,
-header .form {
+.logo {
+    padding: 10px;
     width: 50%;
 }
 
-header div.logo {
-    padding: 10px;
-}
-
-header .form {
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
-}
-
-header nav {
-    font-size: 12px;
-    margin-left: 20px;
-}
-
-header ul li {
-    list-style-type: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #000;
+.copy-header {
+    font-weight: 400;
+    text-align: center;
 }
 
 header .form .input {
+    display: block;
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
@@ -77,83 +64,93 @@ header .form .input {
     padding: 2px;
 }
 
-header .form .submit {
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
+header input {
+    display: block;
+    outline: none;
+    line-height: 1.2em;
+    border: none;
+    width: 250px;
+    font-size: 12pt;
 }
 
-div.burger-menu {
-    text-align: center;
-}
-
-div.burger-menu i {
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
-
-div.last-visit,
-div.offers {
+.main-header-top-bar {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.price {
-    font-size: 18px;
-    width: 30%;
+header div div .form {
+    display: flex;
+    margin: auto;
+    padding: 3px;
+    font-size: 12px;
+    width: 50%;
+    background-color: white;
 }
 
-.discount {
-    width: 70%;
+.form i {
+    font-size: 20px;
 }
 
-.discount,
-.description {
-    font-size: 16px;
-    font-weight: normal;
+header {
+    background-color: #EAC926;
+    padding: 20px;
 }
 
-h3,
-.description {
-    color: #666;
-}
-
-.description {
+.nav-bar {
     display: none;
-    margin-top: 20px;
+    list-style: none;
+}
+
+.site-bar {
+    margin-bottom: 15px;
+}
+
+.burger-menu {
+    text-align: center;
+    background-color: #03264C;
+    margin: auto;
+    display: block;
+    max-width: 50px;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 0px;
+    font-size: 18px;
 }
 
 section.banner img {
     width: 100%;
 }
 
-main {
-    width: 90%;
+.main-home {
+    width: 90vw;
+    text-align: center;
     margin: 0 auto;
+    background-color: #ebebeb;
 }
 
-main section article {
-    background-color: #fff;
-    margin: 10px 0px;
+.products,
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-main section article img {
+h3 {
+    color: #666;
+    font-size: 24px;
+    text-align: left;
+}
+
+.precio_descuento {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
 }
 
-main section article i,
-.discount {
-    color: #39b54a;
-}
-
-main section article i {
+.precio_descuento i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -165,47 +162,192 @@ main section article i {
     position: absolute;
     right: 20px;
     top: -15px;
+    color: #39b54a;
 }
 
-main section h3 {
-    margin: 20px 0px;
-}
-
-article div.main-article {
+.main-article {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
-    position: relative;
-    padding: 15px;
+    margin: 10px 0px;
+    background-color: #fff;
 }
 
-@media (min-width: 361px) {
-    main section article .description {
+.main-article img {
+    width: 100%;
+}
+
+.nombre_producto {
+    display: none;
+    margin-top: 20px;
+    color: white;
+    transition: color 5ms;
+}
+
+.nombre_producto:hover {
+    color: black
+}
+
+.fa-truck:hover {
+    animation: rotamos 3s infinite;
+}
+
+@keyframes rotamos {
+    0% {}
+    /*25% {transform: rotate(30deg)}*/
+    50% {
+        transform: rotate(360deg)
+    }
+    /*75% {transform: rotate(30deg)}*/
+    100% {}
+}
+
+footer {
+    background-color: #EAC926;
+    text-align: center;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+}
+
+footer p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.login-form {
+    text-align: left;
+    margin: 10% 40%
+}
+
+@media (min-width:361px) {
+    .nombre_producto {
         display: block;
     }
-    main section article {
+    .nav-bar {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-bar i {
+        padding: 5px;
+    }
+    .nav-bar ul {
+        list-style: none;
+    }
+    .nav-bar a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding: 5px 0px;
+        font-size: 17px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .main-article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    main section div.products {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    main section div.products article {
+    .main-article {
         width: 45%;
     }
-    .price,
-    .discount {
-        width: 50%;
+    footer h3 {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
     }
 }
 
 @media (min-width: 769px) {
-    main section div.products article {
-        width: 22%;
+    .top-header {
+        display: flex;
+        justify-content: space-between
     }
+    .copy-header {
+        width: 50%;
+        max-width: 350px;
+        text-align: right;
+        align-self: center;
+    }
+    .nav-bar {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .main-article {
+        width: 18%;
+    }
+    .products,
+    .offers {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .nav-bar ul {
+        display: flex;
+        list-style: none;
+    }
+    .nav-bar li {
+        margin: 0px 5px;
+    }
+    .footer-bar {
+        padding: 20px;
+        display: flex;
+    }
+    footer h3 {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width:1200px) {
+    .logo {
+        width: 250px;
+    }
+    .top-header,
+    .nav-bar {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.main-register {
+    text-align: left;
+}
+
+form {
+    padding: 15px;
+    text-align: left;
+    background-color: #ebebeb;
+}
+
+form div {
+    padding: 5px 0px
+}
+
+.perfilUsuario {
+    padding: 10px;
+}
+
+.perfilUsuario label {
+    display: block;
+    padding: 10px;
+}
+
+.categorias {
+    display: block;
+    padding: 10px
+}
+
+.categorias div {
+    padding-top: 10px;
 }

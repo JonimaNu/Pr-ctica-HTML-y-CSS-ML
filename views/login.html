@@ -5,52 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bienvenidos a MELI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="css/cssLogin.css">
 </head>
 
 <body>
     <header>
         <div class="top-header">
-            <div class="logo">
-                <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            <div class="main-header-top-bar">
+                <img src="./images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" class="logo"></img>
+                <form class="form" action="#" method="GET">
+                    <!-- sobre action/method= /*https://www.w3schools.com/tags/att_form_method.asp*/-->
+                    <input type="text" placeholder="Buscar productos, marcas y más">
+                    <i class="fa fa-search"></i>
+                </form>
             </div>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar productos, marcas y más</div>
-                <div class="submit"><i class="fa fa-search"></i></div>
-            </div>
-            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
         </div>
-        <nav>
-            <div class="izquierdo">
-                <ul>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-
-            </div>
-            <div class="derecho">
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </div>
-        </nav>
+        <nav class="nav-bar">
+            <ul class="site-bar" type="circle">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="login-bar" type="circle">
+                <li><a href="/register">Creá tu cuenta</a><i class="fas fa-address-book"></i></li>
+                <li>
+                    <a href="/login" ">Ingresá</a><i class="fas fa-sign-in-alt "></i></li>
+        <li><a href="# ">Mis compras</a><i class="fas fa-shopping-basket "></i></li>
+    </ul>
+    </nav>
+    <div class="burger-menu ">
+        <i class="fas fa-bars "></i>
+    </div>
+</div>
     </header>
-    <form action="/" method="GET">
-
-        <label for="name"></label>
-        <input placeholder="Nombre de Usuari@" type="text" name="user" id="user" required "[[A-Za-z ]{1,6}">
-        <input placeholder="password" type="password" name="password" id="password" required>
-
-        <input type="submit" name="submit" id="enviar" value="ENVIAR"> </input>
-    </form>
+    <main>
+    <form  method="get " class="login-form ">
+    <div>
+        <label>Nombre de Usuario</label>
+        <input type="login " name="loginUsuario " id="loginUsuario " placeholder="Ingresa tu usuario " >
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password " name="password " id="password " placeholder="Aca por favor tu password! ">
+    </div>
+    <div>
+        <button type="login " value="Ingresar y volver al Home "><a href="/ ">Guardar y volver al Home</a></button>
+    </div>
+</form>
+</main>
+<footer>
+    <div class="footer-bar ">
+        <div>
+            <i class="fas fa-credit-card "></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div>
+            <i class="fas fa-gift "></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div>
+            <i class="fas fa-user-shield "></i>
+            <h3> Seguridad, de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+        </div>
+    </div>
+    <h3>
+          Copyright ©️ 1999-2020 MercadoLiebre S.R.L.
+    </h3>
+</footer>
 </body>
-
 </html>

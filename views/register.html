@@ -5,74 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="css/cssRegister.css">
-    <title>Document</title>
+    <title>Bienvenidos a MELI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <form action="/" method="GET">
-        <nav>
-            <div class="nombre">
-                <label for="name"></label>
-                <input placeholder="Nombre y apellido" type="text" name="nombre" id="nombre" pattern="[A-Za-z ]{1,32}">
-                <label for="user"></label>
-                <input placeholder="Nombre de Usuari@" type="text" name="user" id="user" required "[[A-Za-z ]{1,6}">
-                <label></label>
-                <input placeholder="Email:" type="text" name="email" id="email" required>
+    <header>
+        <div class="top-header">
+            <div class="main-header-top-bar">
+                <img src="./images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" class="logo"></img>
+                <form class="form" action="#" method="GET">
+                    <!-- sobre action/method= /*https://www.w3schools.com/tags/att_form_method.asp*/-->
+                    <input type="text" placeholder="Buscar productos, marcas y más">
+                    <i class="fa fa-search"></i>
+                </form>
             </div>
-            <br/>
-
-            <div class="fechaNacimiento">
-                <h2>Fecha de Nacimiento</h2>
-                <label for="fechaNacimiento"></label>
-                <input placeholder="Fecha de Nacimiento" type="date" name="fechaNacimiento" id="fechaNacimiento" min="1810-01-01" max="2005-01-01" required>
-                <br/>
-                <label for="domicilio"></label>
-                <input placeholder="Domicilio" type="text" name="domicilio" id="domicilio" required>
-            </div>
-            <br/>
-
-            <div class="perfil">
-                <h2>Perfil de usuario</h2>
-                <p><label for="comprar">Comprador</label>
-                    <input type="radio" id="comprar" name="comprar" value="comprar">
-                    <label for="vender">Vendedor</label>
-                    <input type="radio" id="vender" name="vender" value="vender"></p>
-
-            </div>
-            <br/>
-            <div class="intereses">
-                <h2>Intereses</h2>
-                |
-                <p><input type="checkbox" id="electro" name="electro" value="electro"><label for="electro">Electro</label></p>
-                <p><input type="checkbox" id="moda" name="moda" value="moda"><label for="moda">Moda</label></p>
-                <p><input type="checkbox" id="hogar" name="hogar" value="hogar"><label for="hogar">Hogar</label></p>
-                <p><input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria"><label for="jugueteria">Jugeteria</label></p>
-                <p><input type="checkbox" id="vidasana" name="vidasana" value="vidasana"><label for="vidasana">Vida Sana</label></p>
-            </div>
-
-            <br/>
-            <div>
-                <label for="profile">Foto de usuario</label>
-                <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
-            </div>
-            <br/>
-            <div class="clave">
-                <label for="password">Elegí tu contraseña:</label>
-                <p><input placeholder="" type="password" name="password" id="password" required></p>
-                <br/>
-                <label for="password">Repetí tu contraseña:</label>
-                <p><input placeholder="" type="password" name="password_confirm" id="password_confirm" required></p>
-            </div>
-            <br/>
-            <div class="submit">
-                <input type="submit" name="submit" id="enviar" value="ENVIAR"> </input>
-                <input type="reset" name="reset" id="borrar" value="BORRAR"> </input>
-            </div>
+            <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>
+        <nav class="nav-bar">
+            <ul class="site-bar" type="circle">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="login-bar" type="circle">
+                <li><a href="/register">Creá tu cuenta</a><i class="fas fa-address-book"></i></li>
+                <li>
+                    <a href="/login" ">Ingresá</a><i class="fas fa-sign-in-alt "></i></li>
+            <li><a href="# ">Mis compras</a><i class="fas fa-shopping-basket "></i></li>
+        </ul>
         </nav>
-    </form>
-</body>
+        <div class="burger-menu ">
+            <i class="fas fa-bars "></i>
+        </div>
+    </div>
+</header>
+    <main class="main-register ">
+        <form  method="get " class="create-form ">
+            <div>
+                <input type="text " name="nombre " id="nombre " placeholder="Nombre "required>
+            </div>
+            <div>
+                <input type="text " name="apellido " id="apellido " placeholder="Apellido " required>
+            </div>
+            <div>
+                <input type="text " name="nombreUsuario " id="nombreUsuario " placeholder="Nombre de Usuario " required>
+            </div>
+            <div>
+                <label>Fecha de Nacimiento</label>
+                <input type="date " name="fechaNacimiento " id="fechaNacimiento " required>
+            </div>
+            <div>
+                <input type="text " name="domicilio " id="domicilio " placeholder="Domicilio " required >
+            </div>
+            <div class="perfilUsuario "> <!--En radio se pone required en una opción-->
+                <label for="perfilUsuario " >Perfil de Usuario:</label>
+                <input type="radio " name="perfilUsuario " id="perfilUsuario " required>Comprar
+                <input type="radio " name="perfilUsuario " id="perfilUsuario ">Vender   
+            </div>
+            <div>
+                <label class="categorias ">Categorias de Interés:
+                    <div>
+                    <label> <input type="checkbox " name="interes " value="elec ">Electro</label>
+	                <label> <input type="checkbox " name="interes " value="moda ">Moda</label>
+	                <label> <input type="checkbox " name="interes " value="hogar ">Hogar</label>
+	                <label> <input type="checkbox " name="interes " value="juguet ">Jugueteria</label>
+	                <label> <input type="checkbox " name="interes " value="vidaSana ">Vida Sana</label>
+                </div>
+                </label>
+                <div>
+                    <label>Foto de Usuario</label>
+                    <input type="file " name="fotoUsuario " id="fotoUsuario " required>
+                </div>
+                <div>
+                    <input type="password " name="password " id="password " placeholder="Password " required>
+                </div>
+                <div>
+                    <input type="password " name="check_password " id="check_password " placeholder="Confirmar Password " required>
+                </div>
+                <div>
+                        <button type="submit " value="Guardar y volver al Home "><a href="/ ">Guardar y volver al Home</a></button>
+                
+                </div>
 
+                <div>
+                        <input type="reset " value="Borrar ">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-bar ">
+            <div>
+                <i class="fas fa-credit-card "></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div>
+                <i class="fas fa-gift "></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div>
+                <i class="fas fa-user-shield "></i>
+                <h3> Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+            </div>
+        </div>
+        <h3>
+              Copyright ©️ 1999-2020 MercadoLiebre S.R.L.
+        </h3>
+    </footer>
+</body>
 </html>
